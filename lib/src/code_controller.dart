@@ -104,7 +104,8 @@ class CodeController extends TextEditingController {
   }
 
   @override
-  TextSpan buildTextSpan({TextStyle? style, bool? withComposing}) {
+  TextSpan buildTextSpan(
+      {BuildContext? context, TextStyle? style, bool? withComposing}) {
     // final pattern = r"((a)b)|((c)(d))";
     // final re = RegExp(pattern);
     // final m = re.firstMatch("cd");
